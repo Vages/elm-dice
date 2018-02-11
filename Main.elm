@@ -39,12 +39,17 @@ view model =
                 _ ->
                     ""
     in
-        div []
-            [ button
-                [ onClick Roll
-                , style [ ( "margin-top", "-0.4em" ), ( "font-size", "10rem" ) ]
+        div [ style [ ( "display", "flex" ), ( "flex-direction", "column" ), ( "align-items", "center" ) ] ]
+            [ div
+                [ style
+                    [ ( "margin-top", "-0.3em" ), ( "font-size", "20rem" ) ]
                 ]
                 [ text currentDieFace ]
+            , button
+                [ onClick Roll
+                , style [ ( "font-size", "2rem" ) ]
+                ]
+                [ text "Roll" ]
             ]
 
 
