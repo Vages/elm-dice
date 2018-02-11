@@ -42,7 +42,7 @@ view model =
         div []
             [ button
                 [ onClick Roll
-                , style [ ( "margin-top", "-0.4em" ), ( "font-size", "70rem" ) ]
+                , style [ ( "margin-top", "-0.4em" ), ( "font-size", "10rem" ) ]
                 ]
                 [ text currentDieFace ]
             ]
